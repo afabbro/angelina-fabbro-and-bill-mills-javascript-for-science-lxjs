@@ -6,24 +6,30 @@ html
     title Javascript... FOR SCIENCE!
 
     //- Check out 'src/bower_components/prism/' for available themes
+    link(rel='stylesheet', type='text/css', href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One|Noto+Serif:400,400italic')
     link(rel='stylesheet', type='text/css', href='bower_components/prism/prism-tomorrow.css')
-
     link(rel='stylesheet', type='text/css', href='styles/main.css')
 
   body
 
     article
 
-      section
+      section.title
+        hr.flourish
         h1 Javascript... FOR SCIENCE!
+        hr.flourish
+        h3.fancy Testing This: murr
 
       section
         h2 Bullet List
         h3.bullet Powered by <a href="https://github.com/markdalgleish/bespoke-bullets">bespoke-bullets</a>
         ul
-          li Bullet 1
-          li Bullet 2
-          li Bullet 3
+          li 
+            h2 Bullet 1
+          li 
+            h2 Bullet 2
+          li 
+            h2 Bullet 3
 
       section
         h2 Syntax Highlighting

@@ -2,9 +2,9 @@
 
 // variables!
 
-slide_width = 640px
-slide_height = 480px
-slide_background = #eaeaea
+slide_width = 1280px
+slide_height = 768px
+slide_background = #111D2C
 
 slide_transition_length = .6s
 slide_transition_easing = ease
@@ -120,9 +120,15 @@ code
 // content styles
 
 body
-  font-family: helvetica, arial, sans-serif
+  font-family: 'Noto Serif', serif;
   font-size: 18px
-  color: #404040
+  color: #F3F2FC
+
+h1, h2
+  font-family: 'Pathway Gothic One', sans-serif;
+
+h3.fancy
+  font-family: 'Noto Serif', serif;
 
 h1
   font-size: 72px
@@ -139,11 +145,14 @@ h3
   font-size: 24px
   font-weight: normal
   margin-bottom: 24px
-  color: #606060
+  color: #00D7C8
 
 hr
-  visibility: hidden
-  height: 20px
+  // visibility: hidden
+  border-bottom: 4px dotted #3D689D;
+  width: 60%;
+  color: transparent;
+  margin: 30px 0;
 
 ul
   list-style: none
@@ -158,3 +167,9 @@ p
 a
   color: #0093CC
   text-decoration: none
+
+.title
+  h1 
+    text-align: right
+
+
