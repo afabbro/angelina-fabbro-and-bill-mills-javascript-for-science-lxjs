@@ -10,12 +10,82 @@ html
 
     link(rel='stylesheet', type='text/css', href='styles/main.css')
 
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js')
+
   body
 
     article
 
       section
         h1 Javascript... FOR SCIENCE!
+
+      section
+        #container
+          script.
+            $(function () {
+                $('#container').highcharts({
+                    chart: {
+                        type: 'bar',
+                        backgroundColor : 'rgba(0,0,0,1)',
+                    },
+                    title: {
+                        text: 'Channels per Experiment',
+                        style: {
+                            color: '#FFFFFF'
+                        }
+                    },
+                    xAxis: {
+                        categories: ['UA1 (1980s)', 'ALEPH (1990s)', 'ATLAS (current)'],
+                        title: {
+                            text: null
+                        },
+                        labels:{
+                            style:{
+                                color: '#FFFFFF',
+                                fontSize: '20'
+                            }
+                        }
+                    },
+                    yAxis: {
+                        min: 1,
+                        type: 'logarithmic',
+                        title: {
+                            text: 'Channels',
+                            align: 'high',
+                            style:{
+                                color: '#FFFFFF'
+                            } 
+                        },
+                        labels: {
+                            overflow: 'justify',
+                            style:{
+                                color: '#FFFFFF'
+                            }
+                        }
+                    },
+                    tooltip: {
+                        valueSuffix: ''
+                    },
+                    plotOptions: {
+                        bar: {
+                            dataLabels: {
+                                enabled: true,
+                                style: {
+                                    color: '#FFFFFF'
+                                }
+                            }
+                        }
+                    },
+                    credits: {
+                        enabled: false
+                    },
+                    series: [{
+                        showInLegend: false,
+                        data: [10000, 100000, 100000000],
+                        color: 'rgba(0,255,0,1)'
+                    }]  
+                });
+            });
 
       section
         h2 Bullet List
@@ -65,3 +135,5 @@ html
     script(src='bower_components/bespoke-state/dist/bespoke-state.min.js')
     script(src='bower_components/prism/prism.js')
     script(src='scripts/main.js')
+    script(src='scripts/highcharts.js')
+
