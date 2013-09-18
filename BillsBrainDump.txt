@@ -22,7 +22,10 @@ Because of the skyrocketing scale of their work, CERN has been forced to come up
 /*Angelina discusses her observations of coding in science, comments on why these behaviors are a probem and what their result is / is likely to be - research backing?*/
 
 - Angelina introduces how she met Bill, early observations about coding style (very brief)
+
 - Angelina explains the impetus for grad students to write unmaintainable code and that even though grad students think that there code won't be used by anyone else, it is often handed off without their knowledge after the fact
+
+- Angelina discusses two code samples, and perhaps how they could be improved?
 
 15:00
 
@@ -40,7 +43,14 @@ There are tons more things I could show you about GRIFFIN, but already we've see
 25:00
 
 /*Angelina - thoughts on how to instill good computing culture? */
--Developers often start with top-down enforcement, but the sciences will need grassroots enculturation
+
+- The problem of developers thinking they can't code for science (talk about attitudes from 2013 NASA Space Apps Challenge)
+
+- Scientists: If you're not a computing scientist, admit that you are out of your domain (accept help!)
+- Developers: You are smart. You are capable.
+
+- Developers often start with top-down enforcement, but the sciences will need grassroots enculturation
+
 -'Treating code as a 1st class research citizen' needs a strong cultural base
 
 35:00
