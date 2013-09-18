@@ -26,7 +26,7 @@ Because of the skyrocketing scale of their work, CERN has been forced to come up
 
 - Angelina explains the impetus for grad students to write unmaintainable code and that even though grad students think that there code won't be used by anyone else, it is often handed off without their knowledge after the fact
 
-- Angelina discusses two code samples, and perhaps how they could be improved?
+- Angelina discusses a few code samples, and perhaps how they could be improved?
 
 15:00
 
@@ -62,10 +62,13 @@ Just before I turn things over to Angelina, there was one request I got from an 
 
 38:00
 
-/*Angelina closing remarks */
--Time is currently very ripe for computing and science to work together, since science is beginning to try to change
+A: When Alex Miller asked me to speak at Strange Loop, I knew that I absolutely had to bring Dr. Mills along so we could finally give this talk. From looking at the schedule and the talk last year, this interdisciplinary nature of this conference was apparent, and an interdisciplinary approach is what we need in order to make all aspects of scientific inquiry better.
+
+B: Time is currently very ripe for computing and science to work together, since science is beginning to try to change
+
 
 40:00
+
 
 
 
