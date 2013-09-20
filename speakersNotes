@@ -7,7 +7,7 @@
 3. The State of Physics: Bill 1:00 - 5:00
 -Moore's law for particle physics: experimental complexity on flagship CERN experiments has increaced by a factor of 10^4 in my lifetime
 -CERN has excellent visualizations, but poor code reusability / portability / maintainability
--TRIUMF was a world leader in using web apps for experimental control, but no evolution has gone into web / interface / information design
+-TRIUMF was a world leader in using web apps for experimental control, but no evolution has gone into web / interface / information design 
 -Conclusion: physics has has scaled past its software cultures.
 
 4. Science Coding in the Wild: Angelina 5:00 - 15:00
