@@ -1,4 +1,7 @@
 # Javascript... FOR SCIENCE!
+
+A presentation given by Angelina Fabbro and Dr. Bill Mills at Strange Loop 2013. Please note that some context is missing without the video (examples of cool experiments!), we'll link it when posted.
+
 > A [Bespoke.js](http://markdalgleish.com/projects/bespoke.js) presentation, built with [generator-bespoke](https://github.com/markdalgleish/generator-bespoke)
 
 ## View slides locally
