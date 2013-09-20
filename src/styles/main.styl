@@ -2,11 +2,11 @@
 
 // variables!
 
-slide_width = 1280px
-slide_height = 768px
+slide_width = 100%
+slide_height = 100%
 slide_background = #111D2C
 
-slide_transition_length = .6s
+slide_transition_length = .5s
 slide_transition_easing = ease
 slide_transition_translate_x = 0
 slide_transition_rotate_y = 90deg
@@ -60,10 +60,8 @@ article
   width: slide_width
   height: slide_height
   position: absolute
-  top: 50%
-  margin-top: (slide_height / 2) * -1
-  left: 50%
-  margin-left: (slide_width / 2) * -1
+  top: 0
+  left: 0
   background: slide_background
   padding: 40px
   border-radius: 0
@@ -106,12 +104,6 @@ article
 .bespoke-bullet-active
   opacity: 1
 
-// bespoke-state styles
-
-.emphatic,
-.emphatic .bespoke-slide
-  background: slide_background
-
 // prism styles
 
 code
@@ -123,6 +115,7 @@ body
   font-family: 'Noto Serif', serif;
   font-size: 18px
   color: #F3F2FC
+  background: #000000;
 
 h1, h2
   font-family: 'Pathway Gothic One', sans-serif;
@@ -167,6 +160,32 @@ p
 a
   color: #0093CC
   text-decoration: none
+
+section.black
+  background: #000000;
+
+section.sublime
+  background: #272822
+
+section.cover 
+  background:#000
+  overflow:hidden
+
+section.cover:before 
+  display:none
+  
+section.cover img
+  position:absolute;
+  top:0
+  left:50%
+  z-index:-1
+  height:100%
+  //width: 100%
+  -webkit-transform:translateX(-50%)
+  -moz-transform:translateX(-50%)
+  -ms-transform:translateX(-50%)
+  -o-transform:translateX(-50%)
+  transform:translateX(-50%)
 
 // For chart
 #chartContainer  
