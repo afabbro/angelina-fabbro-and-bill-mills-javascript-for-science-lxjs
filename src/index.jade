@@ -11,7 +11,9 @@ html
     link(rel='stylesheet', type='text/css', href='styles/main.css')
 
   body
+
     article
+
         section.title
             hr.top
             h1 Javascript... FOR SCIENCE!
@@ -159,9 +161,10 @@ html
             h1 Scaling Infrastructure
             hr.bottom
 
-        section.cover
-            img(src='img/powersCombine.gif')
-            h1.black Let Our Powers Combine
+        section
+            hr.top
+            h1 Let Our Powers Combine
+            hr.bottom
 
         // Angelina's shoutout to scientists    
 
@@ -205,15 +208,15 @@ html
             hr.bottom
 
         //Next slide is Bill
-
-        section.cover
-            img(src='img/advTime.gif') 
+        section
+            hr.top
             h1 Let's Team Up
+            hr.bottom
 
         // This is Angelina's closing slide stuffs
         // Would love for 'She Blinded Me With Science to start playing quietly'
         section
-            img(src='img/strangeLoop.png', class='strangeLoop') 
+            p (Image of strange loop logo/angelina closing rant)
 
         section
             h1 THANKS STRANGE LOOP!
@@ -231,7 +234,9 @@ html
 
 
     script(src='bower_components/bespoke.js/dist/bespoke.min.js')
+    script(src='bower_components/bespoke-bullets/dist/bespoke-bullets.min.js')
     script(src='bower_components/bespoke-hash/dist/bespoke-hash.min.js')
     script(src='bower_components/bespoke-state/dist/bespoke-state.min.js')
+    script(src='bower_components/prism/prism.js')
     script(src='scripts/main.js')
 
