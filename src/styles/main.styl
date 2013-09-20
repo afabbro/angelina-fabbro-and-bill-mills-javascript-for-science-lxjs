@@ -142,10 +142,41 @@ h3
 
 hr
   // visibility: hidden
+  border: 0
   border-bottom: 4px dotted #3D689D;
   width: 60%;
-  color: transparent;
-  margin: 30px 0;
+  color: transparent
+  margin: 30px 0
+
+.bespoke-active hr.top
+  margin-left: -100%
+  animation: move-top 1s ease-out 1;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/
+  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+  -ms-animation-fill-mode:forwards; /*IE 10+*/
+  animation-fill-mode:forwards; /*when the spec is finished*/
+
+.bespoke-active hr.bottom
+  margin-right: -100%
+  animation: move-bottom 1s ease-out 1;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/
+  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+  -ms-animation-fill-mode:forwards; /*IE 10+*/
+  animation-fill-mode:forwards; /*when the spec is finished*/
+
+@keyframes move-top {
+  100% {
+     transform: translate(83.3%, 0)
+  }
+}
+
+@keyframes move-bottom {
+  100% {
+     transform: translate(-83.3%, 0)
+  }
+}
 
 ul
   list-style: none
