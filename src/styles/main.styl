@@ -1,0 +1,262 @@
+@import 'nib' // CSS3 extensions for Stylus: http://visionmedia.github.io/nib/
+
+// variables!
+
+slide_width = 100%
+slide_height = 100%
+slide_background = #111D2C
+
+slide_transition_length = .5s
+slide_transition_easing = ease
+slide_transition_translate_x = 0
+slide_transition_rotate_y = 90deg
+
+bullet_transition_length = .3s
+bullet_transition_easing = ease
+bullet_transition_translate_x = 16px
+
+// base
+
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+
+@media print
+  *
+    -webkit-print-color-adjust: exact
+
+@page
+  size: landscape
+  margin: 0
+
+// bespoke.js layout styles
+
+article
+  transition: background slide_transition_length slide_transition_easing
+  display: none
+  &.bespoke-parent
+    display: block
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    overflow: hidden
+    @media print
+      overflow: visible
+      position: static
+    perspective: 600px
+
+.bespoke-slide
+  transition: all slide_transition_length slide_transition_easing
+  transform-origin: 50% 50% ((slide_width / 2) * -1)
+  backface-visibility: hidden
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  text-align: center
+  width: slide_width
+  height: slide_height
+  position: absolute
+  top: 0
+  left: 0
+  background: slide_background
+  padding: 40px
+  border-radius: 0
+  @media print
+    height: 743px // seems to correspond with an A4, landscape page height
+    width: 100%
+    page-break-before: always
+    position: static
+    margin: 0
+
+.bespoke-before
+  transform: translateX(slide_transition_translate_x * -1) rotateY(slide_transition_rotate_y * -1)
+
+.bespoke-after
+  transform: translateX(slide_transition_translate_x) rotateY(slide_transition_rotate_y)
+  @media print
+    transform: translateX(0) rotateY(0)
+
+.bespoke-inactive
+  opacity: 0
+  pointer-events: none
+  @media print
+    opacity 1
+
+.bespoke-active
+  opacity: 1
+
+// bespoke-bullet styles
+
+.bespoke-bullet
+  transition: all bullet_transition_length bullet_transition_easing
+
+.bespoke-bullet-inactive
+  opacity: 0
+  li&
+    transform: translateX(bullet_transition_translate_x)
+  @media print
+    opacity: 1
+
+.bespoke-bullet-active
+  opacity: 1
+
+// prism styles
+
+code
+  padding: 26px !important
+
+// content styles
+
+body
+  font-family: 'Noto Serif', serif;
+  font-size: 18px
+  color: #F3F2FC
+  background: #000000;
+
+h1, h2
+  font-family: 'Pathway Gothic One', sans-serif;
+
+h3.fancy
+  font-family: 'Noto Serif', serif;
+
+h1
+  font-size: 72px
+  line-height: 82px
+  letter-spacing: -2px
+  margin-bottom: 16px
+
+h2
+  font-size: 42px
+  letter-spacing: -1px
+  margin-bottom: 8px
+
+h3
+  font-size: 24px
+  font-weight: normal
+  margin-bottom: 24px
+  color: #00D7C8
+
+hr
+  // visibility: hidden
+  border: 0
+  border-bottom: 4px dotted #3D689D;
+  width: 60%;
+  color: transparent
+  margin: 30px 0
+
+.bespoke-active hr.top
+  margin-left: -100%
+  animation: move-top 1s ease-out 1;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/
+  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+  -ms-animation-fill-mode:forwards; /*IE 10+*/
+  animation-fill-mode:forwards; /*when the spec is finished*/
+
+.bespoke-active hr.bottom
+  margin-right: -100%
+  animation: move-bottom 1s ease-out 1;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/
+  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+  -ms-animation-fill-mode:forwards; /*IE 10+*/
+  animation-fill-mode:forwards; /*when the spec is finished*/
+
+@keyframes move-top {
+  100% {
+     transform: translate(83.3%, 0)
+  }
+}
+
+@keyframes move-bottom {
+  100% {
+     transform: translate(-83.3%, 0)
+  }
+}
+
+ul
+  list-style: none
+
+li
+  margin-bottom: 12px
+
+p
+  margin: 0 100px 12px
+  line-height: 22px
+
+a
+  color: #0093CC
+  text-decoration: none
+
+section.black
+  background: #000000
+
+section.white
+  background: #FFFFFF
+
+section.sublime
+  background: #272822
+
+section.light-grey
+  background: #eeeeee
+
+section.cover 
+  z-index: 0
+  background:#000000
+  overflow:hidden
+
+section.cover:before 
+  display:none
+  
+section.cover img
+  position:absolute;
+  top:0
+  left:0%
+  z-index:-1
+  height:100%
+  -webkit-transform:translateX(-50%)
+  -moz-transform:translateX(-50%)
+  -ms-transform:translateX(-50%)
+  -o-transform:translateX(-50%)
+  transform:translateX(-50%)
+
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  transform: scale(1.5);
+
+section.cover img.exception
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+
+
+section.cover .tint
+  background: rgba(0, 0, 0, 0.5)
+  padding: 30px
+
+.atlas, .chart, .GRIFFIN, .tallCode
+  height: 100% // Should figure out why this image is skewed, this does fix it for now though
+
+.wideCode
+  width:100%
+
+.pixHeart
+  height:10%
+
+.affilBadge
+  width:10%
+  margin-right:1em
+
+.badgeDiv
+  margin-top:1em
+
+.strangeLoop
+  width:30%

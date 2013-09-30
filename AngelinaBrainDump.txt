@@ -1,0 +1,41 @@
+Javascript... for SCIENCE
+
+- My grad school friends often ask me for help learning to code
+- Best practices are a good idea - in fact great ideas! Or.. BEST IDEA!>!?!?!
+
+
+Why help:
+- Teaching will make you a better programmer and communicator of programming ideas
+- Contributing to better scientific practices means more reliable results and better science
+- You will learn a lot about science
+- Progress in science is slowing down (prove it!)
+
+Advice for Programmers:
+
+Advice for Scientists:
+- Yes, you may have been writing code that 'does enough of a job' but don't let that be the legacy you leave behind
+- Accept that not writing tests is problematic - you probably don't write bug free code, none of us do, it's arrogant to think otherwise
+- Working without version control is being irronspible with your time
+- Be prepared to think differently about how you code
+
+
+
+- Scientists are smart people but lack the domain knowledge that programmers in the industry have for writing maintainable code
+- There is impetus to write throwaway software - once I'm out of grad school I no longer have to worry about or maintain it haha!
+- Grad students will inherit legacy code to 'help them get started' - often they inherit a mess
+
+- There are no tests!
+- A scientist may spend time mathmatically proving something, then implement software to model and further prove their point, but then doesn't write tests for that software - big problem
+- One overarching test is 'spits out the right answer' - insufficient, doesn't identify edge cases, doesn't test components of program individually to make sure they are reusable
+
+- Insufficient version control 
+- Having better version control implies more opportunity to iterate rather than waterfall
+
+- The code is kept private - science should be an open process, so why isn't more science open source?
+- Grossly hypocritical to not have code review
+- Scientists might say that this gets in the way of the 'friendly competition'
+- Scientists should publish their code to an open repository when the paper is published
+
+How to meet scientists/programmers:
+
+- Website (to be named)

@@ -1,0 +1,103 @@
+1. Introductions (title slide)
+
+2. Thesis Statement: Angelina 0:00 - 1:00
+- My grad school friends often ask me for help learning to code
+- Best practices are a good idea - in fact great ideas! Or.. BEST IDEA!>!?!?!
+
+3. The State of Physics: Bill 1:00 - 5:00
+-Moore's law for particle physics: experimental complexity on flagship CERN experiments has increaced by a factor of 10^4 in my lifetime
+-CERN has excellent visualizations, but poor code reusability / portability / maintainability
+-TRIUMF was a world leader in using web apps for experimental control, but no evolution has gone into web / interface / information design 
+-Conclusion: physics has has scaled past its software cultures.
+
+4. Science Coding in the Wild: Angelina 5:00 - 15:00
+- Scientists are smart people but lack the domain knowledge that programmers in the industry have for writing maintainable code
+- There is impetus to write throwaway software - once I'm out of grad school I no longer have to worry about or maintain it haha!
+- Grad students will inherit legacy code to 'help them get started' - often they inherit a mess
+
+- There are no tests!
+- A scientist may spend time mathmatically proving something, then implement software to model and further prove their point, but then doesn't write tests for that software - big problem
+- One overarching test is 'spits out the right answer' - insufficient, doesn't identify edge cases, doesn't test components of program individually to make sure they are reusable
+
+- Insufficient version control 
+- Having better version control implies more opportunity to iterate rather than waterfall
+
+- The code is kept private - science should be an open process, so why isn't more science open source?
+- Grossly hypocritical to not have code review
+- Scientists might say that this gets in the way of the 'friendly competition'
+- Scientists should publish their code to an open repository when the paper is published
+
+-Suggestions from Bill:
+-include some research?  See papers on the value of tests for example, but the more the merrier:
+http://collaboration.csc.ncsu.edu/laurie/Papers/TDDpaperv8.pdf
+http://research.microsoft.com/en-us/groups/ese/nagappan_tdd.pdf
+-content examples:
+	-cut and paste code: concequence of no code review, costing students opportunities
+	-monolith code: loose grasp of architecture
+	-waterfall testing: physics validation only tests what falls out the very bottom
+	-frostypipe: tragic interface, would be faster and more elegant in a web interface
+
+5. Problems in Science UI: Bill 15:00 - 25:00
+-Angelina just illustrated some of the gaps in the nuts and bolts of the science code she's seen in the wild; now let's look at my efforts to address science's other main deficit: user interaction
+-Introduce GRIFFIN's experimental program briefly
+	-R process
+	-symmetries
+	-nuclear structure
+-Introduce GRIFFIN's new attitude towards development and UI
+	-open source
+	-code reviews
+	-web based UI, motivated by the need to accomodate many rotating groups of users
+-Problem 1: Skeumorphic Representation
+	-Show DESCANT's detector view, explain briefly what we're looking at
+	-contrast to a table dump of the same numbers
+	-Skeumorphic design provides crucial geometric and contextual information that text views can't capture
+	-We need to find a way to include not just the explicit information, but all its 'contextual metadata'.
+-Problem 1-a: Skeumorphic Engineering
+	-There isn't a physics-satisfactory solution for skeumorphic web design; canvas is too dumb, SVG too heavy, frameworks have too much bulk
+	-In addition to its technical benefits, the ability to cherry-pick bits of a framework would make them much more paletable for physicists.
+-Problem 1-b: Skeumorphic Design
+	-Skeumorphism is really useful, but it can go wrong fast: contrast DESCANT (70 channels) to SHARC (>900); need good designers to do it right
+-Problem 2: Interaction Design
+	-Another serious problem with text-based UI is that is has no concept of gesture and little accomodation of the 'interaction vernacular' that we have all become fluent in
+	-Explain the concept of a trigger, show 8Pi's trigger configuration rosetta
+	-GRIFFIN tries to solve the problem with a natural 'building blocks' drag and drop interface
+	-Analysis is a field that could dramatically benefit from more contextual and interactive UI
+
+6. Computing Culture From the Ground Up: Angelina 25:00 - 35:00
+Why help:
+- Teaching will make you a better programmer and communicator of programming ideas
+- Contributing to better scientific practices means more reliable results and better science
+- You will learn a lot about science
+- Progress in science is slowing down (prove it!)
+
+Advice for Programmers:
+
+Advice for Scientists:
+- Yes, you may have been writing code that 'does enough of a job' but don't let that be the legacy you leave behind
+- Accept that not writing tests is problematic - you probably don't write bug free code, none of us do, it's arrogant to think otherwise
+- Working without version control is being irronspible with your time
+- Be prepared to think differently about how you code
+
+-Suggestions from Bill:
+-Developers often start with top-down enforcement to expose them to good programing as they learn, but the sciences will need grassroots enculturation
+-'Treating code as a 1st class research citizen' needs a strong cultural base
+	-The problem in the sciences isn't so much a fundamental problem with skills, but one of culture
+	-Scientists treat their code as a means to a single end
+	-Scientists often view the process of coding as an inconvenient chore
+	-Academia continues to fail to incorporate computing education for undergrads, or code review for graduate students
+	(more to come)
+
+7.  Closing Remarks - Bill 35:00 - 38:00
+-Plenty of other fields beyond physics need your help too
+	-Agriculture
+	-Life sciences
+-Most interesting comment was from an ecologist - please just sit down with us and start a conversation!
+-Conclusion: the sun is setting on reductionism!  If we work together, we can do great things.
+
+8.  Closing Remarks - Angelina 38:00 - 40:00
+
+
+
+
+
+
